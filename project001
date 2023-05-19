@@ -1,0 +1,19 @@
+
+
+code in python:
+import matplotlib.pyplot as plt
+import numpy as np
+x=np.arange(1,7)
+y=[75,83,85,88,87,91]
+y1=[94,82,90,91,92,95]
+fig=plt.figure()
+axes1=fig.add_axes([0.1,0.1,0.8,0.8])
+axes2=fig.add_axes([0.5,0.1,0.4,0.4])
+axes1.plot(x,y,'r')
+axes1.set_xlabel("ALL MY TESTS")
+axes1.set_ylabel("MY aggregate percentage")
+axes1.set_title("The Marks I actually got")
+axes2.plot(x,y1,'g')
+axes2.set_xlabel("ALL MY TESTS")
+axes2.set_ylabel("MY aggregate percentage")
+axes2.set_title("The Marks I expected")
